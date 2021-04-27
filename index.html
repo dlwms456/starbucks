@@ -31,6 +31,10 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -66,6 +70,7 @@
         </div>
       </div>
 
+      <!-- MAINMENU -->
 
       <ul class="main-menu">
         <li class="item">
@@ -368,7 +373,7 @@
 
     </div>
 
-
+    <!-- BADGE -->
     <div class="badges">
       <div class="badge">
         <img src="./images/badge1.jpg" alt="badge" />
@@ -377,7 +382,87 @@
         <img src="./images/badge2.jpg" alt="badge" />
       </div>
     </div>
+  
   </header>
 
+  <!-- UISUAL -->
+  <section class="visual">
+    <div class="inner">
+
+      <div class="title fade-in">
+        <img src="./images/visual_title.png" alt="starbucks delightfull start to year">
+        <a href="javascript:void(0)" class="btn btn--brown">자세히보기</a>
+      </div>
+
+      <div class="fade-in">
+        <img src="./images/visual_cup1.png" alt="new oatemeal latte" class="cup1 image">
+        <img src="./images/visual_cup1_text.png" alt="new oatemeal latte" class="cup1 text">
+      </div>
+
+      <div class="fade-in">
+        <img src="./images/visual_cup2.png" alt="new starbucs carammel latte" class="cup2 image">
+        <img src="./images/visual_cup2_text.png" alt="new starbucs carammel latte" class="cup2 text">
+      </div>
+
+      <div class="fade-in">
+        <img src="./images/visual_spoon.png" alt="spoon" class="spoon">
+      </div>
+      
+
+    </div>
+  </section>
+
+  <!-- NOTICE  -->
+  <section class="notice">
+
+    <div class="notice-line">
+      <div class="bg-left">
+
+      </div>
+      <div class="bg-right">
+
+      </div>
+
+      <div class="inner">
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">크리스마 & 연말연시 스타벅스 매장 영업시간 변경 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[당첨자발표] 2021 스타벅스</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:voidv(0)">블라블라</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">볼라볼라볼라?</a>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <div class="material-icons">add_circle</div>
+          </a>
+          
+        </div>
+        <div class="inner__right">
+          <h2>스타벅스 프로모션</h2>
+          <div class="toggle-promotion">
+            <div class="material-icons">upload</div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="promotion">
+      <div class="swiper-container">
+        text
+      </div>
+    </div>
+
+  </section>
 </body>
 </html>
