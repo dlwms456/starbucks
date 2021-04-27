@@ -484,5 +484,6 @@ header .badges .badge{
   position: absolute;
   top: 40px;
   left: 50%;
-  margin-left: -1238.5px;
+  margin-left: 123;
+  color: #000;
 }
