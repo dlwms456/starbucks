@@ -67,3 +67,43 @@ new Swiper('.notice-line .swiper-container', {
   autoplay: true,
   loop: true
 });
+
+
+new Swiper('.promotion .swiper-container', {
+  // direction: 'horizental' 기본값
+  slidesPerView: 3, //한번에 보여줄 수
+  spaceBetween: 10, // 사이 간격
+  centeredSlides: true, //1번슬라이드가 센터
+  loop: true, //루프
+  autoplay: {
+    delay: 5000 //auto 딜레이 객체
+  },
+  pagination: {
+    el: '.promotion .swiper-pagination', //페이지번호 선택자 요소
+    clickable: true,
+    },
+  navigation: {
+      prevEl: '.swiper-prev',
+      nextEl: '.swiper-next'
+    }
+});
+
+
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion')
+let isHidePromotion = false;
+
+
+promotionToggleBtn.addEventListener('click', function () {
+  isHidePromotion = !isHidePromotion //!가 반대가 되게 true가되게 false가 되게 계속 반대값으로 전환 시킨다 중요
+  if (isHidePromotion) {
+    //숨김처리
+    promotionEl.classList.add('hide');
+  } else {
+    //보임 처리
+    promotionEl.classList.remove('hide');
+  }
+});
+
+
+
