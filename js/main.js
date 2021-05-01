@@ -106,4 +106,13 @@ promotionToggleBtn.addEventListener('click', function () {
 });
 
 
+function floatingObject(selector) {
+  gsap.to(selector , 1, {
+    y: 20,
+    repeat: -1,
+    yoyo: true
+  })
+}
+
+floatingObject('.floating')
 
